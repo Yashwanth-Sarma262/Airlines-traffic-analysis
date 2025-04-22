@@ -1,39 +1,37 @@
-# Airlines-traffic-analysis
-Geospatial Analysis of U.S. Airline Flight Routes and Fares (1993-2024)
-Overview
-This project focuses on the geospatial and statistical analysis of U.S. airline flight routes and fares from 1993 to 2024. The dataset, sourced from Kaggle, contains detailed information on airline routes, airport distances, passenger traffic, fare variations, and market shares of different airline carriers. The objective is to derive meaningful insights using data visualization, geospatial mapping, and statistical analysis techniques.
+This project presents a detailed analysis of U.S. airline traffic data spanning from 2003 to 2023. The dataset, sourced from Kaggle, includes information such as flight routes, airline carriers, passenger volumes, travel distances, and average fares. The goal is to extract meaningful insights about air travel trends over two decades using data visualization and statistical analysis.
 
-Technologies & Libraries Used
-Python: The core programming language for analysis.
-Pandas: For data manipulation, cleaning, and preprocessing.
-Matplotlib & Seaborn: For statistical data visualization (histograms, line charts, scatter plots, box plots).
-Folium: For interactive geospatial mapping of flight routes.
-Google Colab: Used as the development environment to run the project seamlessly.
+Tools & Technologies Used
 
-Methodology
-Data Import & Cleaning
-The dataset was uploaded in CSV format and read using Pandas.
-Encoding issues and datatype inconsistencies were handled.
-Missing values were dropped or corrected where necessary.
-Geocoded city coordinates were extracted for mapping.
+Python (Pandas, NumPy) for data cleaning, transformation, and analysis
 
-Geospatial Analysis
-A Folium interactive map was created to visualize flight routes between origin and destination cities.
-A Marker Cluster was implemented to improve visualization and reduce clutter.
-Data formatting issues related to coordinate values were handled.
-Statistical & Visual Analysis
-Distribution of Average Fare: A histogram was generated to analyze fare variations.
-Passenger Trends Over Time: A line plot visualized total airline passenger growth over the years.
-Market Share of Largest Carriers: A box plot analyzed the dominance of top airlines.
-Distance vs. Fare Relationship: A scatter plot examined how distance affects pricing.
-Market Share of Lowest Fare Carriers: A box plot compared low-cost airline competition.
+Seaborn & Matplotlib for statistical data visualization
 
-Results & Insights
-Fare distribution revealed price fluctuations across different routes.
-Passenger trends showed a gradual increase in air traffic over time.
-Market dominance varied among major airlines, with some carriers consistently holding a higher share.
-Distance and fare relationships indicated that longer distances do not always correlate with higher fares, possibly due to airline pricing strategies.
-Budget airlines maintained competitive market shares, impacting fare structures across different routes.
+Plotly Express for interactive plots
 
-Conclusion
-This project successfully analyzed U.S. airline traffic trends and visualized flight routes using geospatial techniques. The insights derived can help stakeholders in the aviation industry, such as airlines, policymakers, and travelers, understand market dynamics and fare patterns. Future improvements could include predictive modeling for fare trends and incorporating real-time airline data for more dynamic insights.
+Google Colab as the development environment
+
+Key Methodologies & Analysis Performed
+
+Data Cleaning: Removed missing or inconsistent values and formatted date/time features for easier time-based grouping.
+
+Passenger Trends: A monthly line plot showed the seasonal nature of air travel, with peaks during holiday seasons and consistent yearly growth.
+
+Airline Market Share: Bar plots highlighted dominant carriers such as Southwest, Delta, and American Airlines, with changing market dynamics over the years.
+
+Top Destinations: Visualization of the most frequently visited cities revealed hubs like Atlanta, Chicago, and Denver as major air traffic centers.
+
+Fare Distribution & Trends: Fare analysis across quarters showed fluctuations influenced by seasonal demand and airline pricing strategies.
+
+Flight Distance Patterns: Averages of nonstop miles over quarters indicated relative stability in domestic route lengths.
+
+Key Insights
+
+Passenger volumes have steadily increased post-2003, reflecting rising air travel demand.
+
+A few major carriers maintain strong dominance, though competition from low-cost airlines remains impactful.
+
+Travel behavior shows strong seasonality, with evident spikes during summer and end-of-year holidays.
+
+Fares do not always scale linearly with distance, suggesting strategic pricing across routes.
+
+Top cities handle a significant share of overall U.S. air traffic, emphasizing the importance of major airport hubs.
